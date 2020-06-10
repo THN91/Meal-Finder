@@ -3,7 +3,7 @@ const search = document.getElementById('search'),
     ramdom = document.getElementById('random'),
     mealsEl = document.getElementById('meals'),
     resultHeading = document.getElementById('result-heading'),
-    single_mealEl = document.getElementById('single-meal');
+    single_mealEl = document.getElementById('single-meals');
 
 
 function searchMeal(e) {
@@ -48,7 +48,7 @@ function getMealById(mealID) {
         });
 }
 
-function addMealToDOM() {
+function addMealToDOM(meal) {
     const ingredients = [];
 
     for (let i = 1; i <= 20; i++) {
